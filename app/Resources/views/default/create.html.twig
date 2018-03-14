@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<section class="annonces">
+<h2>votre annonce</h2>
+<form method="POST" class="annonce" action="{{ path('storepage') }}">
+	
+	<label for="Titre">Titre de l'annonce</label><input type="text" name="titre">
+	<label for="Description">Description </label><textarea type="text" name="description"></textarea>
+	<label for="Prix">Prix :</label><input type="text" name="prix">
+
+	<label for="Image">Ajouter une image* </label><input type="url" name="image">
+	<p>* Une annonce avec photo est 7 fois plus consultée qu'une annonce sans photo</p>
+
+	<input type="submit" value="enregistrer" />
+
+
+
+</form>
+</section>
+
+{% endblock %}

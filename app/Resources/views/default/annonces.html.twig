@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div>
+	<h2>ANNONCES</h2>
+	<ul>
+		{% for annonce in annonces %}
+		<li>
+			<P><a href="{{ path('annoncepage', {'id' : annonce.id}) }}">{{ annonce.titre }}</a></P>
+			<img src="{{ annonce.image }}">
+			<p>{{ annonce.prix }} € </p>
+		</li>
+		{% endfor %}
+	</ul>	
+</div>
+
+
+
+{% endblock %}

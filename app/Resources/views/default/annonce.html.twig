@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div>
+	
+			
+			<img src="{{annonce.image }}">
+			<P>{{ annonce.titre }}</P>
+			<p>{{annonce.prix }}</p>
+			<p>{{annonce.date|date('d/m/Y') }}</p>
+			<p>{{annonce.description }}</p>
+
+
+	
+</div>
+<div>
+	<h3>Contacter le vendeure</h3>
+	
+
+</div>
+
+
+
+{% endblock %}
