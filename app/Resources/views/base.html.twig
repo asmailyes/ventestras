@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" type="text/css" href=" https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    </head>
+    <body>
+        <header>
+               <nav>
+                    
+                    <a href=""><i class="fa fa-users"></i>Accueil</a>
+                    <a href=""><i class="fa fa-list-alt"></i> Annonces</a>
+                    <a href=""><i class="fa fa-edit"></i> Déposer une Annonce</a>
+                    <a href=""><i class="fa fa-user"></i>Se connecter</a>
+                </nav>
+       </header>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+        <footer></footer>
+    </body>
+</html>
