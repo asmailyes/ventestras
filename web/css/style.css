@@ -28,11 +28,16 @@ header nav{
     display: flex;
     justify-content: space-around;   
     align-items: center;
+    padding: 0.5%;
+    border-bottom: solid black 1px;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold
     
 }
 header nav a .fa {
     display: block;
     text-align: center;
+<<<<<<< HEAD
     color: #8C595B;
     font-size: 1.5em;
 }
@@ -92,3 +97,58 @@ li img {
 
 
  }
+=======
+    color: royalblue;
+    font-size: 1em;
+}
+header nav a {
+    text-decoration: none;
+    color: royalblue;
+}
+header nav a:hover , .fa:hover {
+    text-decoration: none;
+    color: blue;
+}
+
+h1{
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    font-size: 3em;
+}
+
+#test{
+    max-width: 80%;
+    text-align: justify;
+    margin: 0 auto;
+    border: 1px dotted;
+    padding: 5%;
+    font-family: 'Karla', sans-serif;
+
+}
+
+
+/*   CONNECTION   */
+#login{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+}
+#connect, #register{
+    max-width: 100%;
+    display: flex;
+}
+.email, .login, .password{
+    display: flex;
+}
+legend{
+    text-align: center
+}
+{
+    display: flex;
+    justify-content: center;
+}
+#connect:last-child{
+    display: none;
+}
+>>>>>>> f8e1c0bbd4822d99884594ea14a179e6ff18140d

@@ -1,0 +1,38 @@
+{% extends 'base.html.twig'%} {% block body %}
+<section id="login">
+    <div id="connect">
+        <fieldset>
+            <legend>Connnection</legend>
+            <form method="POST" name="login">
+                <input type="hidden" name="action" value="login">
+                <div class="login">
+                    Pseudo : <input type="text" placeholder="login" name="login" class="login">
+                </div>
+                <div class="password">
+                    Password : <input type="password" placeholder="password" name="password" class="password">
+                </div>
+                <input type="submit" value="Connection" class="submit">
+            </form>
+        </fieldset>
+    </div>
+    <div id="register">
+        <fieldset>
+            <legend>Inscription</legend>
+            <form method="POST" name="register" action="{{ path('register') }}">
+
+                <input type="hidden" name="action" value="register">
+                <div class="login">
+                    Pseudo : <input type="text" placeholder="login" name="login" class="login">
+                </div>
+                <div class="password">
+                    Password : <input type="password" placeholder="password" name="password" class="password ">
+                </div>
+                <div class="email">
+                    Email : <input type="text" placeholder="email" name="email" class="email">
+                </div>
+                <input type="submit" value="Inscription" class="submit">
+            </form>
+        </fieldset>
+    </div>
+</section>
+{% endblock %}

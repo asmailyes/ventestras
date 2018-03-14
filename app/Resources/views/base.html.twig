@@ -6,7 +6,7 @@
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
         <link rel="stylesheet" type="text/css" href=" https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-
+        <link href="https://fonts.googleapis.com/css?family=Karla|Poiret+One|Raleway" rel="stylesheet">
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     </head>
     <body>
@@ -16,7 +16,7 @@
                     <a href=""><i class="fa fa-users"></i>Accueil</a>
                     <a href="{{ path('annoncespage') }}"><i class="fa fa-list-alt"></i> Annonces</a>
                     <a href="{{ path('createpage') }}"><i class="fa fa-edit"></i> Déposer une Annonce</a>
-                    <a href=""><i class="fa fa-user"></i>Se connecter</a>
+                    <a href="{{ path('loginpage') }}"><i class="fa fa-user"></i>Se connecter</a>
                 </nav>
        </header>
         {% block body %}{% endblock %}
