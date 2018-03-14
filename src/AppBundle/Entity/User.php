@@ -5,12 +5,12 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * users
+ * User
  *
  * @ORM\Table(name="users")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\usersRepository")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\UserRepository")
  */
-class users
+class User
 {
     /**
      * @var int
@@ -20,13 +20,13 @@ class users
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
-
+    
     /**
      * @var string
      *
-     * @ORM\Column(name="name", type="string", length=255, unique=true)
+     * @ORM\Column(name="login", type="string", length=255, unique=true)
      */
-    private $name;
+    private $login;
 
     /**
      * @var string
@@ -45,7 +45,7 @@ class users
     /**
      * @var int
      *
-     * @ORM\Column(name="numtelephone", type="integer")
+     * @ORM\Column(name="numtelephone", type="integer", nullable=true)
      */
     private $numtelephone;
 
@@ -67,9 +67,9 @@ class users
      *
      * @return users
      */
-    public function setName($name)
+    public function setLogin($login)
     {
-        $this->name = $name;
+        $this->login = $login;
 
         return $this;
     }
@@ -79,9 +79,9 @@ class users
      *
      * @return string
      */
-    public function getName()
+    public function getLogin()
     {
-        return $this->name;
+        return $this->login;
     }
 
     /**

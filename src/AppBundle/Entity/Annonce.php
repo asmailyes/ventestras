@@ -52,7 +52,7 @@ class Annonce
     /**
      * @var int
      *
-     * @ORM\Column(name="idUser", type="integer")
+     * @ORM\Column(name="id_user", type="integer")
      */
     private $idUser;
 
