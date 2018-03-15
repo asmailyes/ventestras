@@ -31,7 +31,7 @@ class Annonce
     /**
      * @var string
      *
-     * @ORM\Column(name="description", type="string", length=255)
+     * @ORM\Column(name="description", type="string", length=2000)
      */
     private $description;
 
@@ -52,7 +52,7 @@ class Annonce
     /**
      * @var int
      *
-     * @ORM\Column(name="id_user", type="integer")
+     * @ORM\Column(name="id_user", type="integer", nullable=true)
      */
     private $idUser;
 

@@ -12,7 +12,7 @@
         <option name="fixed"/>
       </options>
     </field>
-    <field name="description" type="string" column="description" length="255" nullable="false">
+    <field name="description" type="string" column="description" length="2000" nullable="false">
       <options>
         <option name="fixed"/>
       </options>
@@ -23,7 +23,7 @@
       </options>
     </field>
     <field name="prix" type="decimal" column="prix" precision="2" scale="0" nullable="false"/>
-    <field name="idUser" type="integer" column="id_user" nullable="false">
+    <field name="idUser" type="integer" column="id_user" nullable="true">
       <options>
         <option name="unsigned"/>
       </options>
